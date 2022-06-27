@@ -1,7 +1,7 @@
-function capitalize(string) {
-  let firstLetter = string.charAt(0);
+function capitalize(str) {
+  let firstLetter = str.charAt(0);
   firstLetter = firstLetter.toUpperCase();
-  let secondPart = string.slice(1,);
+  let secondPart = str.slice(1,);
   return firstLetter + secondPart;
 }
 

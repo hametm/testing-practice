@@ -28,6 +28,10 @@ test("reverseString works with punctuation", () => {
   expect(reverseString("humdinger!")).toBe("!regnidmuh");
 });
 
+test("reverseString works with uppercase", () => {
+  expect(reverseString("Thestral")).toBe("lartsehT");
+});
+
 // Calculator
 
 test("calculator add works", () => {
@@ -62,6 +66,10 @@ test("caesar cipher works with z", () => {
 
 test("caesar cipher works with spaces", () => {
   expect(caesarCipher("abc def")).toBe("bcd efg");
+});
+
+test("caesar cipher works with uppercase", () => {
+  expect(caesarCipher("aBcdef")).toBe("bCdefg");
 });
 
 // Analyze array

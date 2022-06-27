@@ -4,14 +4,10 @@ const analyzeArray = (() => {
         return sum / arr.length;
     }
     const min = (arr) => {
-        for (let i = 0; i <= arr.length; i++) {
-            if (arr[i] < arr[i + 1]) return arr[i];
-        }
+        return Math.min(...arr);
     }
     const max = (arr) => {
-        for (let i = 0; i <= arr.length; i++) {
-            if (arr[i] > arr[i + 1]) return arr[i]
-        }
+        return Math.max(...arr);
     }
     const length = (arr) => arr.length;
 
